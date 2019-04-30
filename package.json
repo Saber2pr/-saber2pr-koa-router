@@ -1,6 +1,6 @@
 {
   "name": "@saber2pr/koa-router",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "> router for @saber2pr/koa.",
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "start": "tsc --watch"
   },
   "devDependencies": {
+    "axios": "^0.18.0",
     "typescript": "^3.4.3"
   },
   "dependencies": {

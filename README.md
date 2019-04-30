@@ -10,16 +10,43 @@ npm install @saber2pr/koa-router
 git clone https://github.com/Saber2pr/-saber2pr-koa-router.git
 ```
 
+# API
+
+1. route(path)(async ctx
+
+2. route.get(path)(async ctx
+
+3. route.post(path)(async ctx
+
+4. route.del(path)(async ctx
+
+5. route.put(path)(async ctx
+
 ```ts
 Koa()
   .use(
     route('/')(async ctx => {
-      ctx.response.end('helloworld')
+      ctx.response.end('helloworld!')
     })
   )
   .use(
-    route('/user')(async ctx => {
-      ctx.response.end('user')
+    route.get('/get')(async ctx => {
+      ctx.response.end('get!')
+    })
+  )
+  .use(
+    route.post('/post')(async ctx => {
+      ctx.response.end('post!')
+    })
+  )
+  .use(
+    route.del('/del')(async ctx => {
+      ctx.response.end('del!')
+    })
+  )
+  .use(
+    route.put('/put')(async ctx => {
+      ctx.response.end('put!')
     })
   )
   .listen(3004, () => console.log('http://localhost:3004'))
