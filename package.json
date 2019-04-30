@@ -1,6 +1,6 @@
 {
   "name": "@saber2pr/koa-router",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "> router for @saber2pr/koa.",
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   "main": "./lib/index.js",
   "scripts": {
     "test": "node ./lib/test/test.js",
-    "start": "tsc --watch"
+    "start": "tsc --watch",
+    "req": "node lib/test/request.js"
   },
   "devDependencies": {
     "axios": "^0.18.0",
