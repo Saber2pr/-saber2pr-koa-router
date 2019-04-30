@@ -4,7 +4,7 @@
   "description": "> router for @saber2pr/koa.",
   "repository": {
     "type": "git",
-    "url": "git+______"
+    "url": "git+https://github.com/Saber2pr/-saber2pr-koa-router.git"
   },
   "keywords": [
     "koa",

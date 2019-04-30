@@ -7,7 +7,7 @@
 npm install @saber2pr/koa-router
 
 # from github
-git clone ______
+git clone https://github.com/Saber2pr/-saber2pr-koa-router.git
 ```
 
 ```ts
