@@ -1,7 +1,7 @@
 import { Koa } from '@saber2pr/koa'
 import { route } from '../core/saber-koa-router'
 
-Koa()
+Koa({ test: 'test' })
   .use(
     route('/')(async ctx => {
       ctx.response.end('helloworld')
