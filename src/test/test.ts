@@ -1,14 +1,14 @@
 import { Koa } from '@saber2pr/koa'
-import { router } from '../core/saber-koa-router'
+import { route } from '../core/saber-koa-router'
 
 Koa()
   .use(
-    router('/')(async ctx => {
+    route('/')(async ctx => {
       ctx.response.end('helloworld')
     })
   )
   .use(
-    router('/user')(async ctx => {
+    route('/user')(async ctx => {
       ctx.response.end('user')
     })
   )

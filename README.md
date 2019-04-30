@@ -13,12 +13,12 @@ git clone https://github.com/Saber2pr/-saber2pr-koa-router.git
 ```ts
 Koa()
   .use(
-    router('/')(async ctx => {
+    route('/')(async ctx => {
       ctx.response.end('helloworld')
     })
   )
   .use(
-    router('/user')(async ctx => {
+    route('/user')(async ctx => {
       ctx.response.end('user')
     })
   )

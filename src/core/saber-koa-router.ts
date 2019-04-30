@@ -6,7 +6,7 @@
  */
 import { Job } from '@saber2pr/koa'
 
-export function router(path: string) {
+export function route(path: string) {
   return (route: Job): Job => async (ctx, next) => {
     if (ctx.request.url === path) {
       await route(ctx, next)
